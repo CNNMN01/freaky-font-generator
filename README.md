@@ -53,13 +53,11 @@ No build process, no npm install, no configuration needed.
 
 ## 📂 Project Structure
 
-```
 freaky-font-generator/
 ├── index.html          # Main HTML structure
 ├── styles.css          # Responsive CSS styling  
 ├── script.js           # Core conversion logic
 └── README.md           # This file
-```
 
 ## 🎨 Customization
 
