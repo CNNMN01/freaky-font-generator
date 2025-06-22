@@ -84,10 +84,6 @@ Found a bug or have an idea? Feel free to:
 1. **Make** your changes
 1. **Submit** a pull request
 
-## 📜 License
-
-This project is open source and available under the MIT License.
-
 ## 🙏 Acknowledgments
 
 - Thanks to the Unicode Consortium for Mathematical Script characters
