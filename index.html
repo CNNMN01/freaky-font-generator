@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaky Font Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Security: Basic meta tags -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 <span class="freaky-title">𝓕𝓻𝓮𝓪𝓴𝔂</span> Font Generator</h1>
+        
+        <div class="input-section">
+            <label for="input">Enter your text:</label>
+            <textarea id="input" placeholder="Type your normal text here..." maxlength="10000" spellcheck="false"></textarea>
+        </div>
+        
+        <div class="buttons">
+            <button class="copy-btn" type="button">📋 Copy Result</button>
+            <button class="clear-btn" type="button">🗑️ Clear All</button>
+        </div>
+        
+        <div class="output-section">
+            <label for="output">𝓕𝓻𝓮𝓪𝓴𝔂 result:</label>
+            <textarea id="output" readonly placeholder="Your freaky text will appear here..." spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Text copied to clipboard! 🎉</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
