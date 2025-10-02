@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1

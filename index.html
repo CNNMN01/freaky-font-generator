@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaky Font Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Security: Basic meta tags -->
+    <meta name="robots" content="index, follow"> <!-- Changed to allow indexing for AdSense -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+         crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 <span class="freaky-title">𝓕𝓻𝓮𝓪𝓴𝔂</span> Font Generator</h1>
+        
+        <!-- Ad Placement 1: Top Banner (Responsive) -->
+        <div class="ad-container ad-top">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+        
+        <div class="input-section">
+            <label for="input">Enter your text:</label>
+            <textarea id="input" placeholder="Type your normal text here..." maxlength="10000" spellcheck="false"></textarea>
+        </div>
+        
+        <div class="buttons">
+            <button class="copy-btn" type="button">📋 Copy Result</button>
+            <button class="clear-btn" type="button">🗑️ Clear All</button>
+        </div>
+        
+        <div class="output-section">
+            <label for="output">𝓕𝓻𝓮𝓪𝓴𝔂 result:</label>
+            <textarea id="output" readonly placeholder="Your freaky text will appear here..." spellcheck="false"></textarea>
+        </div>
+        
+        <!-- Ad Placement 2: Bottom Banner (Responsive) -->
+        <div class="ad-container ad-bottom">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="0987654321"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+    
+    <!-- Ad Placement 3: Side Rail (Desktop Only) -->
+    <div class="ad-container ad-side-left">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1122334455"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+    
+    <div class="ad-container ad-side-right">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="5544332211"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+
+    <div id="toast" class="toast">Text copied to clipboard! 🎉</div>
+
+    <script src="script.js"></script>
+    
+    <!-- Initialize AdSense Ads -->
+    <script>
+        // Load ads after DOM is ready
+        window.addEventListener('load', function() {
+            try {
+                // Push ads to AdSense
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.error('AdSense initialization error:', e);
+            }
+        });
+    </script>
+</body>
+</html>
