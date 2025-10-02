@@ -352,14 +352,22 @@ button {
 .back-link {
     display: inline-block;
     margin-top: 30px;
-    color: #667eea;
+    padding: 12px 24px;
+    background: white;  /* Change to white background */
+    color: #667eea;     /* Purple text */
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #667eea;  /* Add border so button is visible */
 }
 
 .back-link:hover {
-    color: #764ba2;
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* ============================================
