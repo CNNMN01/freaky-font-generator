@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://freakyfont.netlify.app/sitemap.xml
+
+# Allow Google AdSense crawlers
+User-agent: Mediapartners-Google
+Allow: /
 
 # Crawl delay to be respectful
 Crawl-delay: 1
