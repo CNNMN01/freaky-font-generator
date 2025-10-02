@@ -1,5 +1,5 @@
 /* ============================================
-   EXISTING STYLES REMAIN UNCHANGED
+   BASE STYLES
    ============================================ */
 
 * {
@@ -133,7 +133,36 @@ button {
 }
 
 /* ============================================
-   NEW ADSENSE STYLES
+   FOOTER LINKS (Privacy/Terms)
+   ============================================ */
+
+.footer-links {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e5e9;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-links a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.footer-links span {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+/* ============================================
+   ADSENSE AD CONTAINERS
    ============================================ */
 
 /* Ad Container Base Styles */
@@ -196,14 +225,31 @@ button {
     }
 }
 
-/* Tablet Optimization */
+/* AdSense Responsive Adjustments */
+.adsbygoogle {
+    display: block;
+    width: 100%;
+}
+
+/* Prevent ad container collapse */
+.ad-container:empty {
+    display: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - TABLETS
+   ============================================ */
+
 @media (max-width: 1199px) and (min-width: 768px) {
     .ad-container {
         margin: 15px 0;
     }
 }
 
-/* Mobile Optimization */
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE
+   ============================================ */
+
 @media (max-width: 767px) {
     .ad-container {
         margin: 15px 0;
@@ -244,15 +290,129 @@ button {
         margin: 10px 0;
         border-radius: 8px;
     }
+    
+    .footer-links {
+        font-size: 12px;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .footer-links span {
+        margin: 0 5px;
+    }
 }
 
-/* AdSense Responsive Adjustments */
-.adsbygoogle {
-    display: block;
-    width: 100%;
+/* ============================================
+   POLICY PAGES STYLES
+   ============================================ */
+
+.policy-container {
+    max-width: 800px;
+    line-height: 1.8;
 }
 
-/* Prevent ad container collapse */
-.ad-container:empty {
-    display: none;
+.policy-container h2 {
+    color: #667eea;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.policy-container h3 {
+    color: #764ba2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.policy-container p, 
+.policy-container ul {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.policy-container ul {
+    padding-left: 30px;
+}
+
+.policy-container li {
+    margin-bottom: 8px;
+}
+
+.policy-container a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.policy-container a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #764ba2;
+}
+
+/* ============================================
+   ACCESSIBILITY IMPROVEMENTS
+   ============================================ */
+
+/* Focus visible for keyboard navigation */
+button:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .container {
+        border: 2px solid #333;
+    }
+    
+    button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .ad-container,
+    .buttons,
+    .footer-links {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+    }
 }
